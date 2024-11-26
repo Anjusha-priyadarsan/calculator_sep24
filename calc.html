@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="main">
+        
+        <div style="margin-top: 50px;">
+             <input class="input" type="text" id="output" placeholder="0">
+             
+             
+             
+             <!-- <div ><input  for="" class="label input-two" id="answer"></input> </div> -->
+        </div>
+        <div class="buttons">
+             <div class="row">
+                 <button class="orange" id="clear" onclick="removeAll()" >AC</button>
+                 <button class="orange" id="remove"  onclick="removeLastItem()"><i class="fa-solid fa-delete-left"></i></button>
+                 <button class="orange" id="modulo" onclick="displayData('%')" >%</button>
+                 <button class="orange"  onclick="displayData('/')" id="divide"><i class="fa-solid fa-divide" ></i></button>
+
+             </div>
+             <div class="row">
+                 <button id="seven"   onclick="displayData('7')"  >7</button>
+                 <button id="eight"   onclick="displayData('8')">8</button>
+                 <button id="nine"   onclick="displayData('9')">9</button>
+                 <button class="orange" id="multiply"  onclick="displayData('*')"  ><i class="fa-solid fa-xmark"></i></button>
+
+             </div>
+             <div class="row">
+                 <button id="four"  onclick="displayData('4')"  >4</button>
+                 <button id="five"  onclick="displayData('5')">5</button>
+                 <button id="six"   onclick="displayData('6')">6</button>
+                 <button class="orange" id="minus"  onclick="displayData('-')">-</button>
+
+             </div>
+             <div class="row">
+                 <button id="one"  onclick="displayData('1')">1</button>
+                 <button id="two"  onclick="displayData('2')">2</button>
+                 <button id="three"   onclick="displayData('3')">3</button>
+                 <button class="orange" id="plus"   onclick="displayData('+')">+</button>
+
+             </div>
+             <div class="row">
+                <button id="seven"  onclick="displayData('0')">0</button>
+                <button id="dot"  onclick="displayData('.')">.</button>
+                <button class="buttonequal" id="equal" onclick="showResult()" >=</button>
+
+
+             </div>
+        </div>
+     </form>
+ </div>
+</body>
+</html>
